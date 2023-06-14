@@ -11,10 +11,8 @@
     {%for product in product_list %}
         <div>
             <p>Name:{{product.name}}</p>
-            <p>detail:{{product.details}}</p>
             <p>prise:{{product.prise}}</p>
-            <p>tags:{{product.tags}}</p>
-            <p>image:{{product.image}}</p>
+            <a href="/products/{{product.id}}">Detail:{{product.details}}</a>
         </div>
     {%endfor%}
 </body>
